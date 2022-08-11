@@ -53,7 +53,7 @@ function double(7) {
   return 2 * 7;
 }
 
-all are constant values
+parameter are constant value
 
 function double('7') {
   return 2 * 'x';
@@ -129,7 +129,8 @@ console.log(canIGetADrivingLicense(5))
 //..........................................10
 
 function sameLength(x1,x2){
-    if(x1.length==x2.length){
+
+    if(x1.length == x2.length){
         return "true"
     }
     else{
@@ -294,7 +295,7 @@ console.log(Math.random());
 
 function randomBetweenNumbers(min,max) {
    
-    {   return Math.round((min - 0.5) + Math.random() * (max - min + 1)); };
+     return(( Math.random() * (max - min ))+min );
   }
   
   console.log(randomBetweenNumbers(1,6));
@@ -305,47 +306,66 @@ function randomBetweenNumbers(min,max) {
 
 //.....................................................22
 
-function scoreInUniversty(grade){
-    if ( grade>=95 && grade<=100){
-        return "A"
-    }else if(grade>=85 && grade<=94){
-        return "B"
-    }else if(grade>=70 && grade<=84){
-        return "C"
-    }else if(grade>=50 && grade<=69){
-        return "D"
-    }else{
-        return "F"
-    }
-}
-console.log(scoreInUniversty(95))
-
-
-
 // function scoreInUniversty(grade){
-
-// switch(grade){
-// case  grade>=95 && grade<=100:
-// console.log("A")
-//     break;
-// case grade>=85 && grade<=94:  
-// console.log(scoreInUniversty("B")) 
-// break;
-// case grade>=70 && grade<=84:  
-// console.log(scoreInUniversty("C") )
-// break;
-// case grade>=50 && grade<=69:  
-// console.log(scoreInUniversty("D") )
-// break;
-// case grade>=0 && grade<=49:  
-// console.log(scoreInUniversty("F"))
-
-
+//     if ( grade>=95 && grade<=100){
+//         return "A"
+//     }else if(grade>=85 && grade<=94){
+//         return "B"
+//     }else if(grade>=70 && grade<=84){
+//         return "C"
+//     }else if(grade>=50 && grade<=69){
+//         return "D"
+//     }else{
+//         return "F"
+//     }
 // }
+// console.log(scoreInUniversty(95))
+// console.log(scoreInUniversty(95))
 
-// }
 
-// console.log(scoreInUniversty(96))
+
+
+
+
+function scoreInUniversty(grade){
+
+    switch(grade>0){
+
+    case grade>=95 && grade<=100 :
+
+    console.log("A") 
+        break;
+
+    case  grade>=85 && grade<=94 : 
+    console.log("B")
+   
+    break;
+
+    case grade>=70 && grade<=84 : 
+    
+    console.log("C")
+
+    break;
+
+    case  grade>=50 && grade<=69 :  
+   
+    console.log("D")
+    break;
+    case  grade>=0 && grade<=49 : 
+  
+    console.log("E")
+    
+    
+    }
+    
+    }
+    scoreInUniversty(90)
+    scoreInUniversty(80)
+    scoreInUniversty(20)
+
+    
+    
+
 
 
 
@@ -353,10 +373,6 @@ console.log(scoreInUniversty(95))
 
 //....................................................23
 
-
-for (let i = 1; i < 5; i++) {
-    console.log(i);
-  }
 
 
 
