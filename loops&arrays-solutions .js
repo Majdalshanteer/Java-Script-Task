@@ -751,16 +751,21 @@ showFirstAndLast(['colt','matt', 'tim', 'udemy'])
 *   [{name: 'Elie', title:'instructor'}, {name: 'Tim', title:'instructor'}, {name: 'Matt', title:'instructor'}, {name: 'Colt', title:'instructor'}]
 *
 */
-arr=[];
-function addKeyAndValue(array , key , value){
-    for(i=0;i<array.length; i++){
-         arr.push( array.concat(`${key} : ${value}`))
-      
-    
+function addKeyAndValue(arr, key, value) {
+      for (i = 0; i < arr.length; i++) {
+        obj = arr[i];
+        obj[key] = value;
+      }
+      return arr;
     }
-    console.log(arr)
-}
-addKeyAndValue([{name: 'Elie'}], 'title', 'instructor') 
+    
+    console.log(
+      addKeyAndValue(
+        [{ name: "Elie" }, { name: "Tim" }, { name: "Matt" }, { name: "Colt" }],
+        "title",
+        "instructor"
+      )
+    );
 
 /*
 * Exercise 5:
@@ -782,3 +787,26 @@ addKeyAndValue([{name: 'Elie'}], 'title', 'instructor')
 * Test Cases 5: {i: 1, a: 4, e: 3, o: 3, u: 1};
 *
 */
+
+ function vowel_count(str1) {
+      var vowel_list = "aeiouAEIOU";
+    
+      var object = {};
+    
+      for (var i = 0; i < str1.length; i++) {
+        if (vowel_list.indexOf(str1[i]) !== -1) {
+    
+           
+            if(object[str1[i]]== undefined) 
+            {object[str1[i]] = 1} 
+    else{ object[str1[i]] ++};
+         
+    
+        }
+      }
+    
+     return object;
+    
+      }
+    
+    console.log("vowel_count", vowel_count("I Am awesome and so are you"));

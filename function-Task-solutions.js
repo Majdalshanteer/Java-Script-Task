@@ -391,3 +391,8 @@ i=0
 //...................................................24
 
 
+function resetCounter(){
+  console.log(`${num} and the counter reset now `);
+  num = 0 ;
+}
+resetCounter();
