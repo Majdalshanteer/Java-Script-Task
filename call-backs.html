@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //.......1.......
+// Create a function called sum
+// that takes a single parameter n,
+// and return the sum of all integers up to n starting from 0
+
+// Ex: sum(2); => 2 + 1 + 0 => 3
+// Ex: sum(5); => 5 + 4 + 3 + 2 + 1 + 0 => 15
+
+      function sum(n) {
+        if (n != 0) return n + sum(n - 1);
+        else return n;
+      }
+
+      console.log(sum(4));
+
+      //.....2.......
+      function factorial(n) {
+        if (n != 1) return n * factorial(n - 1);
+        else return n;
+      }
+      console.log(factorial(3));
+
+      //......3.......
+
+      function repeatStr(string, n) {
+        if (n !== 0) {
+          return string + " " + repeatStr(string, n - 1);
+        } else {
+          return string;
+        }
+      }
+      console.log(repeatStr("to", 4));
+
+      //....4......
+      // function sum2(x,y){
+      //     if (x<y){
+      //  return x + sum2(x+1,y)
+      //     }
+
+      //     if (x ==y){
+      //        return x;
+      //     }
+      //     if(x>y){
+      //     return x + sum2(x-1,y)
+      //     }}
+
+      // console.log(sum2(6,3))
+
+      function sum2(x, y) {
+        if (x < y) {
+          if (x != y) {
+            return x + sum2(x + 1, y);
+          }
+        } else if (x > y) {
+          if (x != y) {
+            return x + sum2(x - 1, y);
+          }
+        } else {
+          return x;
+        }
+      }
+      console.log(sum2(6, 3));
+
+      
+    </script>
+  </body>
+</html>
