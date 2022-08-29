@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/4.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <input type="button" class="one" id="result" />
+        <div class="two"    value="1"     onclick="display('1')"> 1 </div>
+        <div class="three"  value="2"     onclick="display('2')"> 2 </div>
+        <div class="four"   value="3"     onclick="display('3')"> 3 </div>
+        <div class="five"   value="+"     onclick="display('+')"> + </div>
+
+        <div class="six"     value="4"   onclick="display('4')"> 4 </div>
+        <div class="seven"   value="5"   onclick="display('5')"> 5 </div>
+        <div class="eight"   value="6"   onclick="display('6')"> 6 </div>
+        <div class="nine"    value="-"   onclick="display('-')"> - </div>
+
+        <div class="ten"       value="7"    onclick="display('7')"> 7 </div>
+        <div class="eleven"    value="8"    onclick="display('8')"> 8 </div>
+        <div class="twelve"    value="9"    onclick="display('9')"> 9 </div>
+        <div class="thirteen"  value="*"    onclick="display('*')"> * </div>
+
+        <div class="foutteen"   value='C'    onclick="clearScreen()"> c </div>
+
+        <div class="fifteen"    value="0"    onclick="display('0')"> 0 </div>
+
+        <div class="sixteen"    value="="    onclick="calculate()"> = </div>
+
+        <div class="seventeen"  value="/"    onclick="display('/')"> / </div>
+
+        <script>
+
+            let output = document.getElementById("result")
+
+            // This function clear all the values
+
+            function clearScreen() {
+                output.value = "";
+            }
+
+            // This function display values
+
+            function display(value) {
+                output.value += value;
+            }
+
+            // This function evaluates the expression and returns result
+
+            function calculate() {
+                var x = output.value;
+                var y = eval(x);
+                output.value = y;
+
+
+            }
+
+        
+           
+
+
+
+        </script>
+
+
+
+
+</body>
+
+</html>

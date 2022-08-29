@@ -1,0 +1,61 @@
+
+body{
+    background-color: #a8bf7e;
+    font-size: 30px;
+}
+
+
+.container {
+    display: grid;
+    height:400px;
+    width: 400px;
+    grid-template-rows: 20% 20% 20% 20% 20%; 
+    grid-template-columns:25% 25% 25% 25%; 
+    background-color: #a0d0ea;
+    margin: auto;
+    margin-top: 10%;
+    
+   
+  }
+  .container > div{
+     margin: 10px;
+     align-items: center;
+     justify-content: center;
+     display: flex;
+     box-shadow: grey 0px 5px 5px;
+     cursor: pointer;
+   }
+
+   .container > input {
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-shadow: grey 0px 5px 5px;
+    cursor: pointer;
+    
+   }
+   .one{
+    grid-column: 1/5;
+    color: black;
+  font-size: large;
+  font-weight: bold;
+    background-color: #f1fbeb;
+    width: 380px;
+    height: 60px ;
+
+   }
+   .five, .nine ,.thirteen ,.seventeen{
+      background-color: #efff93;
+   }
+   .two, .three, .four, .six, .seven, .eight, .ten , .eleven, .twelve,.fifteen,.sixteen{
+    background-color: #efefef;
+   }
+ 
+   .foutteen{
+    background-color: #fb9faa;
+   }
+   
+   .container > div:hover{
+    background-color: #e7e4e4;
+   }
